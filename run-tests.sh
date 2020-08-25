@@ -14,4 +14,4 @@ pydocstyle dictdiffer && \
 isort -rc -c -df **/*.py && \
 check-manifest --ignore ".travis-*,dictdiffer/version.py" && \
 sphinx-build -qnNW docs docs/_build/html && \
-python setup.py test
+python -m pytest
